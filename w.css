@@ -1,0 +1,51 @@
+button {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    background: linear-gradient(pink,rgb(167, 152, 238));
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: cursive;
+    border: 1px solid black;
+}
+
+button:hover {
+    /* background-color: #218838; */
+    background: linear-gradient(pink,rgb(167, 152, 238));
+}
+
+#weather-info {
+    margin-top: 20px;
+}
+#city{
+    border-radius: 5px ;
+    border: 2px solid black;
+}
+</style>
+</head>
+
+<body>
+<div class="weather-container">
+<h1>Weather App</h1>
+<input type="text" id="city" placeholder="Enter city name" />
+<button onclick="mark()">Get Weather</button>
+<div id="weather-info">
+    <p id="location"></p>
+    <p id="temperature"></p>
+    <p id="description"></p>
+</div>
+</div>
+
+<script>
+// let empty=document.querySelector("#city").value
+// function mark(){
+//     if(empty===''){
+//         alert("Plz enter your city o_o")
+//     }
+// }
+</script>
+</body>
+
+</html>

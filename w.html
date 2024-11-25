@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            /* font-family: Arial, sans-serif; */
+            font-family: cursive;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgb(192, 237, 255),rgb(31, 55, 108));
+        }
+
+        .weather-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(77, 35, 35, 0.1);
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            background: linear-gradient(rgb(36, 7, 12),rgb(167, 152, 238));
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: cursive;
+            border: 1px solid black;
+        }
+
+        button:hover {
+            /* background-color: #218838; */
+            background: linear-gradient(pink,rgb(167, 152, 238));
+        }
+
+        #weather-info {
+            margin-top: 20px;
+        }
+        #city{
+            border-radius: 5px ;
+            border: 2px solid rgb(41, 13, 13);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <input type="text" id="city" placeholder="Enter city name" />
+        <button onclick="mark()">Get Weather</button>
+        <div id="weather-info">
+            <p id="location"></p>
+            <p id="temperature"></p>
+            <p id="description"></p>
+        </div>
+    </div>
+
+    <script>
+        // let empty=document.querySelector("#city").value
+        // function mark(){
+        //     if(empty===''){
+        //         alert("Plz enter your city o_o")
+        //     }
+        // }
+    </script>
+</body>
+</html>
